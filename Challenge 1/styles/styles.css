@@ -33,6 +33,18 @@ h2 {
 	margin: 0;
 }
 
+button {
+    background-color: #14181d;
+    border: none;
+    font-size: 10;
+    color: #FFFFFA;
+    padding: 9px 50px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
 div {
     margin: 15px;
     padding: 20px;
