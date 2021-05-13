@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Daphne Varekamp">
+	<title>Challenge 1</title>
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+	<img src="images/SpaceX_Logo.png" alt="spacex" class="center">
+	<hr size="2" width="90%" color="#FFFFFF">
+	<h1>Interplanetary Transport System Interface</h1> <br>
+	<h2>Designed and programmed by The Hague University</h2> <br><br><br>
+
+	<main>
+		<!--- Supplies -->
+		<div class="supplies">
+			<h1>Supplies</h1> <br>
+			<hr size="2" width="90%" color="#FFFFFF">
+			<div class="food">
+				<h3>Food</h3>
+				<label for="food">Amount of food in kg:</label> <br><br>
+				<input type="text" name="food" id="food" /> <br> <br>
+				<button onclick="foodRatio()">Convert</button> <br><br>
+				<p id="food_left"></p>
+			</div>
+			<div class="water">
+				<h3>Water</h3>
+				<label for="water">Amount of water in L:</label> <br><br>
+				<input type="text" name="water" id="water" /> <br><br>
+				<button onclick="waterRatio()">Convert</button> <br><br>
+				<p id="water_left"></p>
+			</div>
+		</div>
+
+		<!--- Metrics -->
+		<div class="metrics">
+			<h1>Metrics</h1> <br>
+			<hr size="2" width="90%" color="#FFFFFF">
+			<div class="gravity">
+				<h3>Gravity</h3>
+				<button onclick="gravityMars()">Mars</button>
+				<button onclick="gravityEarth()">Earth</button> <br><br>
+				<p id="gravity_on_mars"></p>
+				<p id="gravity_on_earth"></p>
+			</div>
+			<div class="kilometers">
+				<h3>Kilometers</h3>
+				<label for="kilometers">Earth km:</label> <br><br>
+				<input type="text" name="kilometers" id="earth_kilometers" /> <br><br>
+				<button onclick="convertKm()">Convert</button> <br><br>
+				<p id="mars_kilometers"></p>
+			</div>
+		</div>
+	</main>
+
+	<!--- Environment -->
+	<div class="environment">
+		<h1>Environment</h1> <br>
+		<hr size="2" width="90%" color="#FFFFFF">
+		<div class="currentGravity">
+			<h3>Current gravity</h3>
+			<label for="currentGravity">Measure the gravity in the ship: </label> <br><br>
+			<button onclick="currentGravity()"> Calculate </button>
+			<p id="current_gravity"></p>
+		</div>
+		<div class="atmosphere">
+			<h3>Atmosphere</h3>
+			<label for="atmosphere">Measure the atmosphere in the ship: </label> <br><br>
+			<button onclick="atmosphere()"> Calculate </button>
+			<p id="oxogyn_ship"></p>
+			<p id="nitrogen_ship"></p>
+			<p id="carbondioxide_ship"></p>
+		</div>
+	</div>
+	</main>
+
+</body>
+
+</html>
