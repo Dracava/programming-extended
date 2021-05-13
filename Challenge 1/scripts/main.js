@@ -1,7 +1,17 @@
+// Date
+var today = new Date();
+var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + (today.getFullYear() + 10);       //I added 10 years on purpose
+document.getElementById("current_date").value = date;
+
+// Time
+var today = new Date();
+var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  document.getElementById("current_time").value = time;
+
 //Food
 function foodRatio() {
     var food = parseFloat(document.getElementById("food").value);
-    if (Number.isNaN(food) === true) {
+    if (Number.isNaN(food) === true) {      //Error message when the user doesn't put in a number
         alert("This is not a number.");
         return;
     }
@@ -14,7 +24,7 @@ function foodRatio() {
 //Water
 function waterRatio() {
     var water = parseFloat(document.getElementById("water").value);
-    if (Number.isNaN(water) === true) {
+    if (Number.isNaN(water) === true) { //Error message when the user doesn't put in a number
         alert("This is not a number.");
         return;
     }
