@@ -16,6 +16,25 @@
 	<h2>Designed and programmed by The Hague University</h2> <br><br><br>
 
 	<main>
+
+		<!--- General -->
+		<div class="general">
+			<h1>General</h1> <br>
+			<hr size="2" width="90%" color="#FFFFFF">
+			<div class="date">
+				<label for="currentDate">Date: </label> <br><br>
+				<input type="text" id="current_date">
+			</div>
+			<div class="time">
+				<label for="currentTime">Time: </label> <br><br>
+				<input type="text" id="current_time">
+			</div>
+			<div class="language">
+				<label>Language:</label>
+				<p>English</p>
+			</div>
+		</div>
+
 		<!--- Supplies -->
 		<div class="supplies">
 			<h1>Supplies</h1> <br>
@@ -23,7 +42,7 @@
 			<div class="food">
 				<h3>Food</h3>
 				<label for="food">Amount of food in kg:</label> <br><br>
-				<input type="text" name="food" id="food" /> <br> <br>
+				<input type="text" name="food" id="food" /> <br><br>
 				<button onclick="foodRatio()">Convert</button> <br><br>
 				<p id="food_left"></p>
 			</div>
