@@ -41,6 +41,36 @@ div {
 	text-align: center;
 }
 
+.general {
+    width: 80%;
+    height: 300px;
+    float: initial;
+	margin-right: 10%;
+    margin-left: 10%;
+	margin-bottom: 50px;
+}
+
+.date{
+    width: 25%;
+    height: 100px;
+    float: left;
+	margin: 20px;
+}
+
+.time{
+    width: 25%;
+    height: 100px;
+    float: left;
+	margin: 20px;
+}
+
+.language{
+    width: 25%;
+    height: 100px;
+    float: left;
+	margin: 20px;
+}
+
 .supplies {
     width: 25%;
     height: 700px;
