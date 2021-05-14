@@ -8,7 +8,7 @@ var today = new Date();
 var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
   document.getElementById("current_time").value = time;
 
-//Food
+// Food
 function foodRatio() {
     var food = parseFloat(document.getElementById("food").value);
     if (Number.isNaN(food) === true) {      //Error message when the user doesn't put in a number
@@ -21,7 +21,7 @@ function foodRatio() {
     }
 }
 
-//Water
+// Water
 function waterRatio() {
     var water = parseFloat(document.getElementById("water").value);
     if (Number.isNaN(water) === true) { //Error message when the user doesn't put in a number
@@ -34,7 +34,7 @@ function waterRatio() {
     }
 }
 
-//Gravity
+// Gravity
 function gravityMars() {
     document.getElementById("gravity_on_mars").innerHTML = "The gravity on Mars is 0.375 that of Earth.";
 }
@@ -42,7 +42,7 @@ function gravityEarth() {
     document.getElementById("gravity_on_earth").innerHTML = "The gravity on Earth is 2.66 times that of Mars.";
 }
 
-//Kilometers
+// Kilometers
 function convertKm() {
     var earthKilometers = parseFloat(document.getElementById("earth_kilometers").value);
     var marsKilometers = earthKilometers * 0.420;
@@ -55,12 +55,12 @@ function convertKm() {
     }
 }
 
-//Current gravity
+// Current gravity
 function currentGravity() {
     document.getElementById("current_gravity").innerHTML = Math.random() + " m/s2";
 }
 
-//Atmosphere
+// Atmosphere
 function atmosphere() {
     document.getElementById("oxogyn_ship").innerHTML = "Oxogyn levels: " + Math.floor(Math.random() * 6) + 1 + "%";
     document.getElementById("nitrogen_ship").innerHTML = "Nitrogen levels: " + Math.floor(Math.random() * 9) + 3 + "%";
