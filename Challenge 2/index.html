@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Daphne Varekamp">
+    <title>Space clock</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <!-- Background scene -->
+    <div id="scene">
+    </div>
+
+    <!-- Header -->
+    <img src="images/SpaceX_Logo.png" id="header">
+
+    <!-- Rover -->
+    <div id="rover">
+        <img src="images/marsRover.png">
+    </div>
+
+    <!-- Date and time -->
+    <div id="container">
+        <h1 id="clock">00:00:00</h1>
+        <h2 id="date">XX.YY.XXXX</h2>
+    </div>
+
+    <!-- Buttons -->
+    <input type="button" id="morning" value="Morning" onclick="sceneMorning()">
+    <input type="button" id="evening" value="Evening" onclick="sceneEvening()">
+
+</body>
+
+</html>
